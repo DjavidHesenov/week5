@@ -19,7 +19,6 @@ const NavBar: React.FC = () => {
                 .then(result => {
                     setWeather(result);
                     setQuery('');
-                    console.log(result);
                 });
         }
     }
