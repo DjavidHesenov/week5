@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import { NavLink, useHistory } from 'react-router-dom'
-// import { IUser } from '../interfaces'
 import { useDispatch } from 'react-redux'
 import { authActions } from '../store/auth'
 
@@ -15,11 +14,6 @@ const Login: React.FC = () => {
 
     const submitHandler = () => {
         if (email && password) {
-            // const newLogin: IUser = {
-            //     email: email,
-            //     password: password
-            // }
-
             dispatch(authActions.login())
             history.push('/')
         }
